@@ -40,7 +40,7 @@ DJANGO_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
-    "djnango.contrib.sites"
+    "django.contrib.sites"
 ]
 
 THIRD_PARTY_APPS = [
@@ -104,9 +104,9 @@ DATABASES = {
 }
 
 
-DATABASES = {
-    "default": env.db("DATABASE_URL")
-}
+# DATABASES = {
+#     "default": env.db("DATABASE_URL")
+# }
 
 PASSWORD_HASHERS = [
     "django.contrib.auth.hashers.Argon2PasswordHasher",
